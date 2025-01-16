@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p>Witaj, @User.Identity.Name!</p>
+}
+else
+{
+    <p>Musisz się <a href="/Account/Login">zalogować</a> aby otrzymać dostęp do reszty funkcji.</p>
+}
