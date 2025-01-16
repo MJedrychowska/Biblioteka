@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<Biblioteka.Models.Rental>
 
-<h1>Manage Rentals</h1>
+<h1>Zarządzaj wypożyczeniami:</h1>
 
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>User</th>
-            <th>Borrow Date</th>
-            <th>Due Date</th>
-            <th>Actions</th>
+            <th>Tytuł</th>
+            <th>Użytkownik</th>
+            <th>Data wypożyczenia</th>
+            <th>Data oddania</th>
+            <th> </th>
         </tr>
     </thead>
     <tbody>
@@ -22,10 +22,10 @@
                 <td>@rental.DueDate.ToString("yyyy-MM-dd")</td>
                 <td>
                     <form method="post" asp-action="Cancel" asp-route-id="@rental.Id" style="display: inline;">
-                        <button type="submit" class="btn btn-danger">Cancel</button>
+                        <button type="submit" class="btn btn-danger">Anuluj</button>
                     </form>
                     <form method="post" asp-action="Extend" asp-route-id="@rental.Id" style="display: inline;">
-                        <button type="submit" class="btn btn-warning">Extend 7 Days</button>
+                        <button type="submit" class="btn btn-warning">Wydłuż o 7 dni</button>
                     </form>
                 </td>
             </tr>

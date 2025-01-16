@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Biblioteka.Models.Book>
 
-<h1>Manage Books</h1>
+<h1>Zarządzanie książkami:</h1>
 
 <table class="table table-striped">
     <thead>
@@ -9,7 +9,7 @@
             <th>Autor</th>
             <th>ISBN</th>
             <th>Dostępne kopie</th>
-            <th>Actions</th>
+            <th> </th>
         </tr>
     </thead>
     <tbody>
@@ -25,13 +25,13 @@
                        asp-action="Edit"
                        asp-route-id="@book.Id"
                        class="btn btn-warning">
-                        Edit
+                        Edytuj
                     </a>
                     <a asp-controller="Books"
                        asp-action="Delete"
                        asp-route-id="@book.Id"
                        class="btn btn-danger">
-                        Delete
+                        Usuń
                     </a>
                 </td>
             </tr>

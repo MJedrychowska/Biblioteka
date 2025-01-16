@@ -1,14 +1,14 @@
 ﻿@model Biblioteka.Models.Book
 
-<h1>Add a new Book</h1>
+<h1>Dodaj nową książkę:</h1>
 
 <form method="post" asp-controller="Books" asp-action="Create">
     <div class="mb-3">
-        <label for="Tytul" class="form-label">Title</label>
+        <label for="Tytul" class="form-label">Tytuł</label>
         <input type="text" class="form-control" id="Tytul" name="Tytul" required />
     </div>
     <div class="mb-3">
-        <label for="Autor" class="form-label">Author</label>
+        <label for="Autor" class="form-label">Autor</label>
         <input type="text" class="form-control" id="Autor" name="Autor" required />
     </div>
     <div class="mb-3">
@@ -16,8 +16,8 @@
         <input type="text" class="form-control" id="ISBN" name="ISBN" maxlength="13" required />
     </div>
     <div class="mb-3">
-        <label for="DostepneKopie" class="form-label">Copies Available</label>
+        <label for="DostepneKopie" class="form-label">Dostępne kopie</label>
         <input type="number" class="form-control" id="DostepneKopie" name="DostepneKopie" required />
     </div>
-    <button type="submit" class="btn btn-primary">Add Book</button>
+    <button type="submit" class="btn btn-primary">Dodaj książkę</button>
 </form>

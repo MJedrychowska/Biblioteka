@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Biblioteka.Models.Rental>
 
-<h1>My Rentals</h1>
+<h1>Moje wypożyczenia</h1>
 
 @if (!Model.Any())
 {
@@ -11,10 +11,10 @@ else
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Borrow Date</th>
-                <th>Due Date</th>
+                <th>Tytuł</th>
+                <th>Użytkownik</th>
+                <th>Data wypożyczenia</th>
+                <th>Data oddania</th>
                 <th>Status</th>
             </tr>
         </thead>
